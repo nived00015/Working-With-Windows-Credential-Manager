@@ -70,7 +70,7 @@ Logs into robotbinspares websites
 ```
 
 
-```Get Credential``` is provided by WindowCredential library.
+```Get Credential``` is provided by ```WindowCredential``` library. <br>
 It  takes the internet or network address as input (in this example, input is robocorp as it is the name of internet or network address we specified while credentials in windows credentials manager) and output will be like a dictionary format as below. 
  
  ```
@@ -86,7 +86,7 @@ It  takes the internet or network address as input (in this example, input is ro
 https://user-images.githubusercontent.com/64367090/109547900-fb7e5680-7af1-11eb-99d5-f9808f1a9981.mp4
 
 
-Simmilary if we need to change password we can use the  ```Set Credential``` keyword provided by the WindowCredential. The format of using the keyword is 
+Simmilary if we need to change password we can use the  ```Set Credential``` keyword provided by the ```WindowCredential```. The format of using the keyword is 
 
 ```Set Credential  Internet or Network address  username   password```
 
