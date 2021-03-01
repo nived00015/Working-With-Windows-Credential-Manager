@@ -71,7 +71,7 @@ Logs into robotbinspares websites
 
 
 ```Get Credential``` is provided by ```WindowCredential``` library. <br>
-It  takes the internet or network address as input (in this example, input is robocorp as it is the name of internet or network address we specified while credentials in windows credentials manager) and output will be like a dictionary format as below. 
+It  takes the internet or network address as input (in this example, input is robocorp as it is the name of internet or network address we specified while creating credentials in windows credentials manager) and output will be like a dictionary format as below. 
  
  ```
  {"username": User Name
