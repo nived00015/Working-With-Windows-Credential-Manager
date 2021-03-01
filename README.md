@@ -16,8 +16,12 @@ For retriving the credential data from windows credential manager, a custom libr
 
 More about keyring: https://pypi.org/project/keyring/
 
-----
-<h3><b>Windows Credential Library</b></h3>
+---------------------------------------------------------------------------
+
+
+<h2><b>Windows Credential Library</b></h2>
+
+This is the WindowCredential.py file 
 
 ```
 import keyring
@@ -33,5 +37,67 @@ def set_credential(service_name, username, password):
 
     return True
 ```
+In this library, there are two functions . First one is used for retrieving the credential data based on the service name (Internet or network address), Second one is used for setting the password for the particular username based on service name.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+<h2><b>Robot</b></h2>
+
+task.robot 
+
+This robot will retrive the credentials from window credential and logs into the website.
+
+```
+*** Settings ***
+Documentation   Template robot main suite.
+Library         WindowCredential
+Library         RPA.Browser
+Library         RPA.core.notebook
+
+*** Tasks ***
+Logs into robotbinspares websites 
+    &{c}=  Get Credential  robocorp
+    
+    Open Available Browser  http://robotsparebinindustries.com/
+    
+    Input Text  id:username  ${c}[username]
+    
+    Input Password  id:password  ${c}[password]
+    
+    Click Button  //button[@type="submit"]
+    
+```
+
+
+```Get Credential``` is provided by WindowCredential library.
+It  takes the internet or network address as input (in this example, input is robocorp as it is the name of internet or network address we specified while credentials in windows credentials manager) and output will be like a dictionary format as below. 
+ 
+ ```
+ {"username": User Name
+ "password": password }
+ ```
+ 
+ from the dictionary format output, we are retriving the username and password as per the example by ${c}[username] and ${c}[passowrd] respectively.
+ 
+ <b>Video to demonstarte the working </b>
+ 
+
+https://user-images.githubusercontent.com/64367090/109547900-fb7e5680-7af1-11eb-99d5-f9808f1a9981.mp4
+
+
+Simmilary if we need to change password we can use the  ```Set Credential``` keyword provided by the WindowCredential. The format of using the keyword is 
+
+```Set Credential  Internet or Network address  username   password```
+
+<b>Note:</b> The password argument provided in the keyword is the new password to be changed for given username and Internet or Network Address.
+
+
+
+
+
+ 
+ 
+ 
 
 
