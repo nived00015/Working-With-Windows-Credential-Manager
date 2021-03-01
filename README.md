@@ -4,4 +4,6 @@ In Robocorp, we use vault feature to store the credential data. But you can also
 
 For the demonstartion purposes, we use the website https://robotsparebinindustries.com/  where the robot log to the website using the credential data stored in windows credential manager.
 
- <img src= 
+ ![Alt text](<https://github.com/nived00015/Working-with-windows-Credential-Manager/blob/main/RobotBinSpares.png>) 
+ 
+ 
