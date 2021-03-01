@@ -7,3 +7,5 @@ For the demonstartion purposes, we use the website https://robotsparebinindustri
  ![Alt text](<https://github.com/nived00015/Working-with-windows-Credential-Manager/blob/main/RobotBinSpares.png>) 
  
  
+ 
+First Step we had to store the credentials data in windows credential manager under generic credentials as shown below
