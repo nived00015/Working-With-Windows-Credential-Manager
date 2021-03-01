@@ -16,7 +16,7 @@ For retriving the credential data from windows credential manager, a custom libr
 
 More about keyring: https://pypi.org/project/keyring/
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----
 <h3><b>Windows Credential Library</b></h3>
 
 ```
