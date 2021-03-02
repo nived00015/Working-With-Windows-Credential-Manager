@@ -88,7 +88,9 @@ https://user-images.githubusercontent.com/64367090/109547900-fb7e5680-7af1-11eb-
 
 Simmilary if we need to change password we can use the  ```Set Credential``` keyword provided by the ```WindowCredential```. The format of using the keyword is 
 
-```Set Credential  Internet or Network address  username   password```
+```Set Credential  ServiceName  username   password```
+
+(Where the ServiceName is the name of internet or network address.)
 
 <b>Note:</b> The password argument provided in the keyword is the new password to be changed for given username and Internet or Network Address.
 
