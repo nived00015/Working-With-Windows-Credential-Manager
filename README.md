@@ -1,4 +1,4 @@
-<center><h1><b>Working with Windows Credential Manager</b></h1></center><br><br><br>
+<div style="text-align:center"><h1><b>Working with Windows Credential Manager</b><h1></div>
 
 
 
