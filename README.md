@@ -2,7 +2,7 @@
 
 
 
-In Robocorp, we use vault feature to store the credential data. But you can also able to store the credential data in <b>Windows Credential Manager </b> during the development time instead of storing the credential data in local vault environment.
+In Robocorp, we use vault feature to store the credential data. But you can also able to retrieve the credential data stored in <b>Windows Credential Manager </b> during the development time instead of storing the credential data in local vault environment.
 
 <b>Let's see how it is done !</b>
 
