@@ -92,7 +92,7 @@ Simmilary if we need to change password we can use the  ```Set Credential``` key
 
 (Where the ServiceName is the name of internet or network address.)
 
-<b>Note:</b> The password argument provided in the keyword is the new password to be changed for given username and Internet or Network Address.
+<b>Note:</b> The password argument provided in the keyword is the new password to be changed for given username and ServiceName.
 
 
 
